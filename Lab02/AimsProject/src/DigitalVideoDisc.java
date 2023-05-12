@@ -5,19 +5,27 @@ public class DigitalVideoDisc {
     private int length;
     private float cost;
 
+    private int id;
+
+    private static int nbDigitalVideoDiscs = 0;
+
+
     public DigitalVideoDisc(String title) {
         this.title = title;
+        nbDigitalVideoDiscs += 1;
     }
 
     public DigitalVideoDisc(String title, String category) {
         this.title = title;
         this.category = category;
+        nbDigitalVideoDiscs += 1;
     }
 
     public DigitalVideoDisc(String title, String category, String director) {
         this.title = title;
         this.category = category;
         this.director = director;
+        nbDigitalVideoDiscs += 1;
     }
 
     public DigitalVideoDisc(String title, String category, String director, int length) {
@@ -25,6 +33,7 @@ public class DigitalVideoDisc {
         this.category = category;
         this.director = director;
         this.length = length;
+        nbDigitalVideoDiscs += 1;
     }
 
     public DigitalVideoDisc(String title, String category, String director, int length, float cost) {
@@ -33,6 +42,7 @@ public class DigitalVideoDisc {
         this.director = director;
         this.length = length;
         this.cost = cost;
+        nbDigitalVideoDiscs += 1;
     }
 
     public String getTitle() {
