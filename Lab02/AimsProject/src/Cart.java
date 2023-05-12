@@ -34,6 +34,12 @@ public class Cart {
         System.out.println("The disc has been added");
     }
 
+    public addDigitalVideoDisc(DigitalVideoDisc [] dvdList) {
+        for(Object disc: dvdList) {
+            addDigitalVideoDisc(disc)
+        }
+    }
+
     public void removeDigitalVideoDisc(DigitalVideoDisc disc) {
         if(qtyOrdered == 0) {
             System.out.println("The cart is empty, unable to remove");
