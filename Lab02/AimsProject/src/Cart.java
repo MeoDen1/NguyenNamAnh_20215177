@@ -35,9 +35,9 @@ public class Cart {
     }
 
     //method overloadding
-    public addDigitalVideoDisc(DigitalVideoDisc [] dvdList) {
-        for(Object disc: dvdList) {
-            addDigitalVideoDisc(disc)
+    public void addDigitalVideoDisc(DigitalVideoDisc [] dvdList) {
+        for(DigitalVideoDisc disc: dvdList) {
+            addDigitalVideoDisc(disc);
         }
     }
 
