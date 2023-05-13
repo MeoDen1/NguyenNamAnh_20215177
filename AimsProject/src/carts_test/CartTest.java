@@ -1,4 +1,7 @@
-public class Aims {
+import disc.DigitalVideoDisc;
+import carts.Cart;
+
+public class CartTest {
     public static void main(String[] args) {
         Cart anOrder = new Cart();
 
@@ -14,16 +17,13 @@ public class Aims {
                 "Animation", "", 0, 18.99f);
         anOrder.addDigitalVideoDisc(dvd3);
 
-        info(anOrder);
+        anOrder.print();
 
         anOrder.removeDigitalVideoDisc(dvd2);
 
-        info(anOrder);
-    }
+        anOrder.print();
 
-    public static void info(Cart anOrder) {
-        System.out.println("\nNumber of disc in cart: " + anOrder.getQtyOrdered());
-        System.out.print("Total cost is: ");
-        System.out.println(anOrder.totalCost());
+        anOrder.search_id(3);
+
     }
 }
