@@ -1,5 +1,6 @@
-import media.*;
+package store;
 
+import media.*;
 import java.util.ArrayList;
 
 public class Store {
@@ -19,5 +20,15 @@ public class Store {
             }
         }
         System.out.println("Item not available");
+    }
+
+    public Media search(String title) {
+        for (Media media : itemInStore) {
+            if(media.getTitle() == title) {
+                media.toString();
+                return media;
+            }
+        }
+        return null;
     }
 }
