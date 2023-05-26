@@ -30,4 +30,11 @@ public class Book extends Media {
 
         authors.remove(authorName);
     }
+
+    public String toString() {
+        return "Book - [" + this.getTitle() + "] - [" 
+                    + this.getAuthors() + "] - [" 
+                    + this.getCategory() + "] - ["
+                    + this.getCost() + "] $";
+    }
 }
