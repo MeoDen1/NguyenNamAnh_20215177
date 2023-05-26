@@ -1,10 +1,15 @@
 package media;
 
+import java.util.Comparator;
+
 public class Media {
     private int id;
     private String title;
     private String category;
     private float cost;
+
+    public static final Comparator<Media> COMPARE_BY_TITLE_COST = new MediaComparatorTitleCost();
+    public static final Comparator<Media> COMPARE_BY_COST_TITLE = new MediaComparatorCostTitle();
 
     public Media() {
         
