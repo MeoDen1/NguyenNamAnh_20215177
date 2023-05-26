@@ -1,7 +1,7 @@
 package aims;
 
+import media.*;
 import carts.Cart;
-import disc.DigitalVideoDisc;
 
 public class Aims {
     public static void main(String[] args) {
@@ -26,6 +26,5 @@ public class Aims {
         anOrder.print();
 
         anOrder.search_id(3);
-
     }
 }

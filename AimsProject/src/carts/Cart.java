@@ -1,6 +1,6 @@
 package carts;
 
-import disc.DigitalVideoDisc;
+import media.DigitalVideoDisc;
 
 public class Cart {
     public static final int MAX_NUMBERS_ORDERED = 20;
@@ -85,7 +85,7 @@ public class Cart {
     public void search_id(int id) {
         boolean isMatch = false;
         for(int i = 0; i < qtyOrdered; i++) {
-            if(id == itemsOrdered[i].id) {
+            if(id == itemsOrdered[i].getId()) {
                 System.out.println(itemsOrdered[i].toString());
                 isMatch = true;
             }
