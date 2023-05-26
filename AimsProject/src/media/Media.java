@@ -44,5 +44,11 @@ public class Media {
     public float getCost() {
         return this.cost;
     }
+
+    public boolean equals(Object c) {
+        if(c == this) return true;
+        if(!(c instanceof Media media)) return false;
+        return media.getTitle() == this.getTitle();
+    }
 }
 
