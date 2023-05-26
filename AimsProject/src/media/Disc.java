@@ -1,5 +1,9 @@
 package media;
 
+interface Playable {
+    public void play();
+}
+
 public class Disc extends Media {
     private int length;
     private String director;
