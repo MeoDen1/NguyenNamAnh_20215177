@@ -12,6 +12,11 @@ public class CompactDisc extends Disc implements Playable {
         this.artist = artist;
     }
 
+    public CompactDisc(String title, String category, float cost, String artist) {
+        super(title, category, null, 0, cost);
+        this.artist = artist;
+    }
+
     public void addTrack(Track track) {
         if(tracks.contains(track)) {
             System.out.println("Track is already in CD");

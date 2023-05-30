@@ -13,6 +13,10 @@ public class Cart {
 
     }
 
+    public ArrayList<Media> getItemsOrdered() {
+        return itemsOrdered;
+    }
+
     public void addMedia(Media t) {
         if(itemsOrdered.contains(t)) {
             System.out.println("The item is already in cart");
