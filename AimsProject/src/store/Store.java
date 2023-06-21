@@ -32,6 +32,10 @@ public class Store {
         return null;
     }
 
+    public ArrayList<Media> getItemsInStore() {
+        return itemInStore;
+    }
+
     public void printStore() {
         if (itemInStore.size() > 0) {
             System.out.println("STORE\n----------------------------------------------------------------------------------------------");
